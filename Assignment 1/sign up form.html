@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+    </style>
+       
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #A020F0;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #A020F0;
+        }
+    </style>
+</head>
+<h1> Application Form </h1>
+<h3>Fill in your details</h3>
+<body>
+
+    <form action="/your-server-side-script" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="education">Education Level:</label>
+        <input type="text" id="education" name="education" required>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+
+        <label for="stateCity">State/City of Residence:</label>
+        <input type="text" id="stateCity" name="stateCity" required>
+
+        <label for="employment">Employment Status:</label>
+        <select id="employment" name="employment" required>
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="student">Student</option>
+            <option value="others">Others</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="school">Choose School:</label>
+        <input type="text" id="school" name="school" required>
+
+        <label for="course">Choose Course of Study:</label>
+        <input type="text" id="course" name="course" required>
+
+        <label for="howHeard">How Did You Hear About Us?</label>
+        <input type="text" id="howHeard" name="howHeard" required>
+
+        <label for="discountCode">Scholarship/Discount Code:</label>
+        <input type="text" id="discountCode" name="discountCode">
+
+        <p> By Clicking continue, I agree to the Terms of Use and 
+            acknowledge that i 
+            have read the Privacy Policy. </p>
+
+        <button type="submit">Proceed</button>
+    </form>
+
+</body>
+</html>
